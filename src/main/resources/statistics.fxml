@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labyrinth.gui.StatisticsController">
+   <children>
+      <TableView fx:id="tableStats" prefHeight="379.0" prefWidth="248.0">
+        <columns>
+          <TableColumn fx:id="colPlayer" maxWidth="-Infinity" minWidth="125.0" prefWidth="125.0" resizable="false" text="Player" />
+          <TableColumn fx:id="colMoves" maxWidth="-Infinity" minWidth="120.0" prefWidth="120.0" resizable="false" text="Number of moves" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonBack" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="25.0" prefWidth="331.0" text="Back">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+   </children>
+</VBox>
